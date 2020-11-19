@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/transaction-statuses",
+      "handler": "transaction-status.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/transaction-statuses/count",
+      "handler": "transaction-status.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/transaction-statuses/:id",
+      "handler": "transaction-status.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/transaction-statuses",
+      "handler": "transaction-status.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/transaction-statuses/:id",
+      "handler": "transaction-status.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/transaction-statuses/:id",
+      "handler": "transaction-status.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

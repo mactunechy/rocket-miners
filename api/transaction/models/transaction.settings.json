@@ -1,0 +1,48 @@
+{
+  "kind": "collectionType",
+  "collectionName": "transactions",
+  "info": {
+    "name": "transaction",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "transactions"
+    },
+    "bitcoinAddress": {
+      "type": "string",
+      "required": true
+    },
+    "comment": {
+      "type": "string"
+    },
+    "transactionId": {
+      "type": "string",
+      "required": false
+    },
+    "transactionStatus": {
+      "type": "string",
+      "required": true
+    },
+    "withdrawnAmount": {
+      "type": "decimal"
+    },
+    "depositAmount": {
+      "type": "decimal",
+      "required": true
+    },
+    "maturityDate": {
+      "type": "date"
+    },
+    "maturityAmount": {
+      "type": "decimal"
+    }
+  }
+}

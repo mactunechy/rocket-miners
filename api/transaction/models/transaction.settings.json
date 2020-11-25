@@ -43,6 +43,9 @@
     },
     "maturityAmount": {
       "type": "decimal"
+    },
+    "currentWithdrawal": {
+      "type": "decimal"
     }
   }
 }

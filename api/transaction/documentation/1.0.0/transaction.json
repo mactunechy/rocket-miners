@@ -669,6 +669,9 @@
           "maturityAmount": {
             "type": "number"
           },
+          "currentWithdrawal": {
+            "type": "number"
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -708,6 +711,9 @@
             "format": "date"
           },
           "maturityAmount": {
+            "type": "number"
+          },
+          "currentWithdrawal": {
             "type": "number"
           },
           "published_at": {

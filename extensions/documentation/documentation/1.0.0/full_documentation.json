@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "11/19/2020 7:53:10 PM"
+    "x-generation-date": "11/25/2020 8:14:25 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -3370,6 +3370,9 @@
           "maturityAmount": {
             "type": "number"
           },
+          "currentWithdrawal": {
+            "type": "number"
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -3409,6 +3412,9 @@
             "format": "date"
           },
           "maturityAmount": {
+            "type": "number"
+          },
+          "currentWithdrawal": {
             "type": "number"
           },
           "published_at": {
@@ -3679,6 +3685,9 @@
                   "type": "string"
                 },
                 "maturityAmount": {
+                  "type": "number"
+                },
+                "currentWithdrawal": {
                   "type": "number"
                 },
                 "published_at": {
